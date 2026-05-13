@@ -1,10 +1,5 @@
+import { redirect } from "next/navigation";
 
-const page = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+export default function HomePage() {
+  redirect("/signin");
 }
-
-export default page

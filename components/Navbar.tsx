@@ -27,9 +27,9 @@ const Navbar = () => {
   return (
     <nav>
       {/* Billing Button  */}
-      <div className="flex gap-5 items-center">
+      <div className="flex gap-2 md:gap-5 items-center">
         
-          <Link href="/billing" className="link_hover transition flex gap-2 items-center border border-[#e9e4e5] rounded-sm shadow-xs px-4 py-1 cursor-pointer">
+          <Link href="/billing" className="hidden link_hover transition md:flex gap-2 items-center border border-[#e9e4e5] rounded-sm shadow-xs px-4 py-1 cursor-pointer">
             <CreditCardIcon size={18}/> Billing
           </Link>
         
@@ -65,7 +65,7 @@ const Navbar = () => {
               <AvatarImage src="https://github.com/shadcn.png" />
               <AvatarFallback>H</AvatarFallback>
             </Avatar>
-            <span>Hassan</span>
+            <span className="hidden md:block">Hassan</span>
           </DropdownMenuTrigger>
           <DropdownMenuContent sideOffset={5} className="w-55">
             <DropdownMenuGroup>
